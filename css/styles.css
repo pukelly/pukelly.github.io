@@ -1,0 +1,91 @@
+/* general styling */
+html {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+    line-height: 22px;
+    margin-left: 15%;
+    margin-right:15%;
+}
+
+h1{
+    font-size: 22px;
+    font-weight: bold;
+    margin: 0.5%;
+}
+
+h2{
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0.5%;
+}
+
+p{
+    font-size: 18px;
+    margin: 0;
+}
+
+a {
+    color: #267C92;
+    text-decoration: none;
+}
+
+a:hover { text-decoration: underline;}
+a:active { text-decoration: underline;}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 25px;
+    align-items: center;
+  }
+
+/* content-specific styling */
+.intro {
+    margin-top: 50px;
+    height: auto;
+    /*background-color:blue;*/
+}
+
+/*.projects {
+    
+}*/
+
+.headshot{
+    width: 100%;
+    filter: brightness(120%) saturate(90%)
+}
+
+.section-break {
+    margin:0;
+    height:50px;
+    /*background-color: orange;*/
+}
+
+.award {
+    font-style: italic;
+}
+
+/* media query styling */
+@media only screen and (max-width: 680px) {
+    .grid-container {
+        grid-template-columns: auto;
+    }
+
+    /*.intro {
+        margin: 25px 25px;
+        font-size: 14px;
+    }*/
+}  
+
+@media only screen and (max-width: 900px){
+    /*.intro {
+        margin: 25px 95px;
+        font-size: 16px;
+    }*/
+  }
+
+/* videos are cropped to 1080 x 800 px */
